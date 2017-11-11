@@ -34,7 +34,8 @@ const animals = {
 
 const home = {
     display: (ctx) => {
-        'Hello World!';
+        ctx.type = 'html';
+        ctx.body = 'Check out our <a href="/animals">animals!</a>';
     }
 };
 
