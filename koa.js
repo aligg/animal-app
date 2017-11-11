@@ -1,14 +1,3 @@
-
-// var koa = require('koa');
-// var app = new koa();
- 
-// app.use(async ctx => {
-//   ctx.body = 'Hello World';
-// });
- 
-// app.listen(3000);
-// console.log('Koa is listening on port 3000');
-
 const _ = require('koa-route');
 const Koa = require('koa');
 const app = new Koa();
@@ -35,7 +24,8 @@ const animals = {
 const home = {
     display: (ctx) => {
         ctx.type = 'html';
-        ctx.body = 'Check out our <a href="/animals">animals!</a>';
+        ctx.body = 'Check out our <a href="/animals">animals!</a><br><img src="http://www.androidguys.com/wp-content/uploads/2015/11/02e3f64f32bfffc28b94cd7f53cf3fe0.jpg" style="width:100%;">'
+        ;
     }
 };
 
