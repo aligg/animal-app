@@ -8,4 +8,5 @@ const database = {
   creature: { name: 'creature', species: 'human' }
 };
 
-console.log(database)
+
+module.exports = {database: database};
