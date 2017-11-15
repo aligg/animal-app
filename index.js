@@ -4,8 +4,8 @@ const Koa = require('koa');
 const app = new Koa();
 
 
-let animalApp = require('./components/animals.js');
-let home = require('./components/home.js')
+const animalApp = require('./components/animals.js');
+const home = require('./components/home.js')
 
 
 app.use(mount('/animals', animalApp));
